@@ -39,16 +39,16 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
             debug: false
         })
     ]],
-    plugins: [
-        async function noProgress(context, options) {
-            return {
-                name: 'no-progress',
-                configureWebpack(config, isServer, utils) {
-                    config.plugins = config.plugins.filter(plugin => !['Client', 'Server'].includes(plugin?.options?.name));
-                }
-            };
-        }
-    ],
+    // plugins: [
+    //     async function noProgress(context, options) {
+    //         return {
+    //             name: 'no-progress',
+    //             configureWebpack(config, isServer, utils) {
+    //                 config.plugins = config.plugins.filter(plugin => !['Client', 'Server'].includes(plugin?.options?.name));
+    //             }
+    //         };
+    //     }
+    // ],
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
