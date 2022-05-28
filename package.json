@@ -1,6 +1,6 @@
 {
   "name": "ut-help",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "scripts": {
     "lint": "ut-lint .",
     "release": "ut-release",
