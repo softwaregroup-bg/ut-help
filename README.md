@@ -4,7 +4,7 @@ Generate help files for UT implementations
 
 ## Setup
 
-1. Add these to `.gitingnore`:
+1. Add these to `.gitignore`:
 
     ```ignore
     .docusaurus
