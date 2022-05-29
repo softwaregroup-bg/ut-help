@@ -18,7 +18,7 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
         locales: ['en']
     },
     presets: [[
-        '@docusaurus/preset-classic',
+        require.resolve('@docusaurus/preset-classic'),
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
             docs: {
