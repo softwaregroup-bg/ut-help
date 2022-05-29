@@ -33,6 +33,7 @@
     "react-dom": "^17.0.2",
     "react": "^17.0.2"
   },
+  "bundledDependencies": true,
   "devDependencies": {
     "typescript": "^4.6.4",
     "tap": "^16.2.0",
