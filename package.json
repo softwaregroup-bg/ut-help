@@ -39,6 +39,11 @@
     "tap": "^16.2.0",
     "ut-tools": "^6.40.9"
   },
+  "overrides": {
+    "remark-parse@8.0.3": {
+      "trim": "0.0.3"
+    }
+  },
   "bin": {
     "ut-help": "bin/index.mjs"
   },
