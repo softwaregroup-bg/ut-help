@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.4...v1.1.5) (2022-05-29)
+
+
+### Bug Fixes
+
+* resolve preset ([d4664b4](https://github.com/softwaregroup-bg/ut-help/commit/d4664b4d8fcb91ca23b8389bf0b62329511bf7cd))
+
+
+
 ## [1.1.4](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.3...v1.1.4) (2022-05-29)
 
 
