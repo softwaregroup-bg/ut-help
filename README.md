@@ -17,7 +17,7 @@ Generate help files for UT implementations
     {
         "scripts":{
             "build": "other build commands && npm run help",
-            "help": "ut-help build --out-dir help"
+            "help": "ut-help build --out-dir dist/help"
         },
         "devDependencies":{
             "ut-help": "^1.0.0"
