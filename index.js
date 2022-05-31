@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const {resolve, relative, dirname} = require('path');
 const base = dirname(dirname(require.resolve('./package.json')));
 
-/** @type {(options: {path: string, include: string[], url: string}) => import('@docusaurus/types').Config} */
+/** @type {(options: {include: string[], url?: string}) => import('@docusaurus/types').Config} */
 module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
     title: 'UT',
     tagline: 'Online help',
