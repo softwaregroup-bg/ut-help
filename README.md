@@ -36,3 +36,7 @@ Generate help files for UT implementations
         ]
     });
     ```
+
+4. Follow the
+  [ut-microservice](https://github.com/softwaregroup-bg/ut-microservice#front-end)
+  front end folder structure to include help files in each module.
