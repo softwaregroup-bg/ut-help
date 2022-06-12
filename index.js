@@ -1,10 +1,11 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-const {resolve, relative, dirname} = require('path');
-const base = dirname(dirname(require.resolve('./package.json')));
+const {resolve: resolvePath, relative, dirname, join} = require('path');
+const {resolve, include, url = 'https://softwaregroup.com'} = require(join(resolvePath('.'), 'utHelp'));
+const base = dirname(dirname(resolve(`${include[0]}/package.json`)));
 
-/** @type {(options: {include: string[], url?: string}) => import('@docusaurus/types').Config} */
-module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
+/** @type {import('@docusaurus/types').Config} */
+module.exports = {
     title: 'UT',
     tagline: 'Online help',
     url,
@@ -12,7 +13,7 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    staticDirectories: [resolve(__dirname, 'static')],
+    staticDirectories: [resolvePath(__dirname, 'static')],
     i18n: {
         defaultLocale: 'en',
         locales: ['en']
@@ -23,7 +24,7 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
         ({
             docs: {
                 path: base,
-                include: include.map(name => relative(base, resolve(require.resolve(`${name}/package.json`), '../help/**/*.{md,mdx}'))),
+                include: include.map(name => relative(base, resolvePath(resolve(`${name}/package.json`), '../help/**/*.{md,mdx}'))),
                 routeBasePath: '/',
                 async sidebarItemsGenerator({
                     defaultSidebarItemsGenerator,
@@ -76,4 +77,4 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
             darkTheme: darkCodeTheme
         }
     })
-});
+};
