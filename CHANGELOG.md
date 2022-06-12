@@ -1,3 +1,12 @@
+## [1.1.12](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.11...v1.1.12) (2022-06-12)
+
+
+### Bug Fixes
+
+* mdx alias ([d66dd36](https://github.com/softwaregroup-bg/ut-help/commit/d66dd36f0bd3b5ae9ea7cec2575749815cddf8dc))
+
+
+
 ## [1.1.11](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.10...v1.1.11) (2022-05-31)
 
 
