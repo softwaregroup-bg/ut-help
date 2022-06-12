@@ -49,6 +49,16 @@ module.exports = ({include, url = 'https://softwaregroup.com'}) => ({
     //         };
     //     }
     // ],
+    plugins: [
+        async function alias() {
+            return {
+                name: 'alias',
+                configureWebpack(config, isServer, utils) {
+                    config.resolve.alias['@mdx-js/react'] = dirname(require.resolve('@mdx-js/react/package.json'));
+                }
+            };
+        }
+    ],
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

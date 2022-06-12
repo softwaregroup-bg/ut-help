@@ -4,12 +4,7 @@ Generate help files for UT implementations
 
 ## Setup
 
-1. Add these to `.gitignore`:
-
-    ```ignore
-    .docusaurus
-    help
-    ```
+1. Add `.docusaurus` in `.gitignore`
 
 2. Modify package.json to include:
 
