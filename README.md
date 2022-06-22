@@ -1,37 +1,37 @@
 # ut-help
 
-Generate help files for UT implementations
+Generate help files for UT implementations, by including content
+from all the relevant modules.
 
 ## Setup
 
-1. Add `.docusaurus` in `.gitignore`
-
-2. Modify package.json to include:
+1. Install `ut-help` globally.
+2. Add `.docusaurus` in `.gitignore`.
+3. Modify package.json to call `ut-help` in the appropriate places:
 
     ```json
     {
         "scripts":{
-            "build": "other build commands && npm run help",
-            "help": "ut-help build --out-dir dist/help"
-        },
-        "devDependencies":{
-            "ut-help": "^1.0.0"
+            "help": "ut-help build --out-dir dist/help",
+            "help:start": "ut-help start --no-open",
+            "release": "ut-webpack --mode production && ut-help build --out-dir dist/help && ut-release",
         }
     }
     ```
 
-3. Create `docusaurus.config.js`:
+4. Create `utHelp.js` in the root of your project:
 
     ```js
-    module.exports = require('ut-help')({
+    module.exports = {
+        resolve: require.resolve,
         include: [
-            'ut-help',
             'ut-core',
-            // include other modules here
+            'ut-customer',
+            // include other packages here
         ]
-    });
+    };
     ```
 
-4. Follow the
+5. Follow the
   [ut-microservice](https://github.com/softwaregroup-bg/ut-microservice#front-end)
   front end folder structure to include help files in each module.
