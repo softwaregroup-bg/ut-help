@@ -1,3 +1,12 @@
+## [1.1.15](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.14...v1.1.15) (2022-06-24)
+
+
+### Bug Fixes
+
+* pass base path ([5aff79b](https://github.com/softwaregroup-bg/ut-help/commit/5aff79b43f52a4c14c21d7318fe2bdce1c322705))
+
+
+
 ## [1.1.14](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.13...v1.1.14) (2022-06-22)
 
 
