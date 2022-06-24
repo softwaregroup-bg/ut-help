@@ -1,8 +1,12 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const {resolve: resolvePath, relative, dirname, join} = require('path');
-const {resolve, include, url = 'https://softwaregroup.com'} = require(join(resolvePath('.'), 'utHelp'));
-const base = dirname(dirname(resolve(`${include[0]}/package.json`)));
+const {
+    resolve,
+    include,
+    url = 'https://softwaregroup.com',
+    base = dirname(dirname(resolve(`${include[0]}/package.json`)))
+} = require(join(resolvePath('.'), 'utHelp'));
 
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
@@ -24,7 +28,7 @@ module.exports = {
         ({
             docs: {
                 path: base,
-                include: include.map(name => relative(base, resolvePath(resolve(`${name}/package.json`), '../help/**/*.{md,mdx}'))),
+                include: ['utHelp.md'].concat(include?.map(name => relative(base, resolvePath(resolve(`${name}/package.json`), '../help/**/*.{md,mdx}')))).filter(Boolean),
                 routeBasePath: '/',
                 async sidebarItemsGenerator({
                     defaultSidebarItemsGenerator,
