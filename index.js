@@ -62,7 +62,8 @@ module.exports = {
                     config.resolve.alias['@mdx-js/react'] = dirname(require.resolve('@mdx-js/react/package.json'));
                 }
             };
-        }
+        },
+        require('./relative')
     ],
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

@@ -21,9 +21,9 @@
     "gitlab": "ut-gitlab"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.21",
-    "@docusaurus/module-type-aliases": "^2.0.0-beta.21",
-    "@docusaurus/preset-classic": "^2.0.0-beta.21",
+    "@docusaurus/core": "^2.3.1",
+    "@docusaurus/module-type-aliases": "^2.3.1",
+    "@docusaurus/preset-classic": "^2.3.1",
     "@mdx-js/react": "^1.6.22",
     "@tsconfig/docusaurus": "^1.0.6",
     "react": "^17.0.2",
@@ -37,9 +37,8 @@
   },
   "bundledDependencies": true,
   "devDependencies": {
-    "typescript": "^4.6.4",
-    "tap": "^16.2.0",
-    "ut-tools": "^7.1.3"
+    "typescript": "^4.9.5",
+    "tap": "^16.2.0"
   },
   "overrides": {
     "remark-parse@8.0.3": {
