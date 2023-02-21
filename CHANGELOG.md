@@ -1,3 +1,13 @@
+## [1.1.16](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.15...v1.1.16) (2023-02-21)
+
+
+### Bug Fixes
+
+* use relative links ([c4633a5](https://github.com/softwaregroup-bg/ut-help/commit/c4633a5cfb0bd506a5605e057f477f8f9c8b9d72))
+* use relative links ([9e30d6c](https://github.com/softwaregroup-bg/ut-help/commit/9e30d6c59527881f1338030157dea221f690ef5f))
+
+
+
 ## [1.1.15](https://github.com/softwaregroup-bg/ut-help/compare/v1.1.14...v1.1.15) (2022-06-24)
 
 
