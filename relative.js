@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const recursiveReaddir = require('recursive-readdir');
-const absoluteUrlRegExp = /(href|src)="(?!http[s]|ftp?:\/\/)\/a\/help\/([^"|#]+)"/g;
+const absoluteUrlRegExp = /(href|src)="(?!http[s]|ftp?:\/\/)\/a\/help\/([^"|#]*)"/g;
 const isDirectory = dirPath => path.extname(dirPath) === '';
 
 const replace = (content, filePath) =>
